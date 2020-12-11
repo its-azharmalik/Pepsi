@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PEPSI</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="sec">
+            <header>
+
+                <a href="#"><img src="logo.png" alt="logo" class="logo"></a>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">What's new</a></li>
+                    <li><a href="#">News Letter</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>That's What<br><span>I Like</span></h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel quia perspiciatis neque labore, temporibus perferendis soluta enim? Quam corrupti molestiae dolores natus eveniet exercitationem tempora fuga pariatur quod quia iure architecto, facere blanditiis esse at nam nesciunt quidem optio porro, enim dicta. Commodi similique autem eos obcaecati doloribus totam iste.</p>
+                    <a href="#">View All Products</a>
+                </div>
+                <div class="imgbox">
+                    <img src="pepsi001.png" class="pepsi">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="pepsi001.png" onclick="imgslider(1);colorchanger('#0062be')"> </li>
+                <li><img src="pepsi002.png" onclick="imgslider(2);colorchanger('#e60c2c')"> </li>
+                <li><img src="pepsi003.png" onclick="imgslider(3);colorchanger('#1e1e1e')"> </li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="instagram.png" alt=""></a></li>
+            </ul>
+        </section>
+
+        <script>
+            function imgslider(num) {
+                document.querySelector('.pepsi').src = 'pepsi00' + num + '.png';
+            };
+            function colorchanger(color) {
+                document.querySelector('.sec').style.background = color;
+            };
+        </script>
+    </body>
+</html>
